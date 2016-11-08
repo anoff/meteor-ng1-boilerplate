@@ -4,7 +4,7 @@
   </div>
   <div layout="column" layout-gt-sm="row">
     <div flex="50">
-      <md-card dir-paginate="entry in entriesList.entries | itemsPerPage: entriesList.perPage" total-items="entriesList.partiesCount">
+      <md-card dir-paginate="entry in entriesList.entries | itemsPerPage: entriesList.perPage" total-items="entriesList.entriesCount">
         <md-card-title>
           <md-card-title-text>
             <span class="md-headline">
@@ -14,6 +14,6 @@
           </md-card-title-text>
         </md-card-title>
       </md-card>
-      <dir-pagination-controls on-page-change="entriesList.pageChanged(newPageNumber)"></dir-pagination-controls>
+      <dir-pagination-controls class="pagination" on-page-change="entriesList.pageChanged(newPageNumber)"></dir-pagination-controls>
     </div>
   </div>

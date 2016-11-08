@@ -11,7 +11,7 @@ This should just give an overview of available features not the full list of pac
 
 * less support
 * account handling (google, twitter, facebook, password)
-* dev mode: insecure, autopublish
+* dev mode: insecure
 * publish count
 
 ## angular
@@ -23,7 +23,7 @@ This should just give an overview of available features not the full list of pac
 Before going to production make sure you remove some packages that shouldn't be there.
 
 ```sh
-meteor remove insecure autopublish
+meteor remove insecure
 ```
 
 # license

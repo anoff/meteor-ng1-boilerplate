@@ -3,6 +3,7 @@ import angularMeteor from 'angular-meteor';
 import template from './entriesList.html';
 import uiRouter from 'angular-ui-router';
 import utilsPagination from 'angular-utils-pagination';
+import 'material-angular-paging';
 import { Counts } from 'meteor/tmeasday:publish-counts';
 
 import { Entries } from '../../../api/entries';
@@ -47,6 +48,7 @@ const name = 'entriesList';
 export default angular.module(name, [
   angularMeteor,
 	uiRouter,
+	'cl.paging',
 	utilsPagination
 ]).component(name, {
   template,

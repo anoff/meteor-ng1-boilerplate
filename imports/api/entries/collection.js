@@ -3,12 +3,12 @@ export const Entries = new Mongo.Collection('entries');
 
 Entries.allow({
 	insert(userId, entry) {
-		return userId && entry.owner === userId;
+		return true;
 	},
   update(userId, entry, fields, modifier) {
-    return userId && entry.owner === userId;
+    return true;
   },
   remove(userId, entry) {
-    return userId && entry.owner === userId;
+    return true;
   }
 });
